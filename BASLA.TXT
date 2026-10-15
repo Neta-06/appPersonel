@@ -1,0 +1,12 @@
+pip download -r requirements.txt -d ./paket
+pip install --no-index --find-links=./paket -r requirements.txt
+pip install --no-index --find-links=paket -r requirements.txt
+
+
+########3#######SİSTEM ÇALIŞTIRMA ##########################
+
+python -m uvicorn app.main:app --reload --port 8000
+
+############################################################
+
+
